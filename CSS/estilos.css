@@ -1,0 +1,572 @@
+
+body{
+    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Metamorphous', cursive;
+    background-color: burlywood;
+    background-color: #FFC280;
+    /*background-image: url(https://previews.123rf.com/images/lorasutyagina/lorasutyagina1604/lorasutyagina160400091/54940369-los-granos-de-caf%C3%A9-ilustraci%C3%B3n-sin-fin-broun-colores-c%C3%A1lidos-para-fondo-de-pantalla-fondo-p%C3%A1gina-web.jpg);
+*/
+
+
+}
+
+#body_index{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.hover{
+
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hover img{
+
+    width: 100%;
+    height: 500px;
+}
+
+
+.hover h1{
+
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 2;
+    border: 4px solid white;
+    padding: 8px;
+    background: transparent;
+
+}
+
+.hover:before,
+.hover:after{
+
+    content: "";
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: 0.6;
+    transition: all 300ms;
+    border: 4px solid white;
+}
+
+.hover:before{
+
+    transform: rotate(45deg) translateY(1500px) translateX(-150px);
+
+}
+
+.hover:after{
+
+    transform: rotate(45deg) translateY(-1400px) translateX(40px);
+}
+
+
+.hover:hover::before{
+
+    transform: rotate(45deg) translateY(-490px) translateX(150px);
+
+}
+
+.hover:hover:after{
+
+    transform: rotate(45deg) translateY(400px) translateX(-40px);
+
+
+}
+
+
+/*index*//*
+.navegacion{
+
+    
+    font-size: 1.4rem;
+    margin-top: 50px;
+    background-color: rgb(255, 255, 133);
+    background-color: #FEFEDF;
+    padding-top: 25px;
+
+}
+
+
+*/
+/**/
+/*#plantilla{
+
+    position: absolute;
+    opacity: 0.3;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: repeat;
+}*/
+
+/*cada item de la barra de nav*/
+a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    
+}
+/**/
+.div_redes{
+    background-color: transparent;
+    display: inline-block;
+    justify-content: center;
+    justify-items: center;
+    background-color: khaki;
+
+}
+/*imagen principal
+.imagen{
+
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    opacity: 0.9;
+}*/
+/*los iconos de las redes sociales*/
+.imagen_redes{
+
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-color: transparent;
+    
+    
+}
+/*titulo*/
+h1{
+    font-size: 3.8rem;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 8px black;
+    
+
+
+}
+
+
+
+/*bajada*/
+.bajada_main{
+
+    margin: 40px;
+    text-align: center;
+
+}
+
+
+.slogan{
+
+    font-weight: bold;
+    font-size: 20rem;
+}
+
+
+/**/
+
+
+
+h2{
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+li{
+
+    display: block;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    top: 10px;
+    list-style: none;
+    margin-bottom: 14px;
+    width: 270px;
+}   
+
+/*Sobre nosotros*/
+
+.subDeSN{
+
+    font-size: 10rem;
+    background-color: aliceblue;
+    font-style: italic;
+}
+
+
+h2{
+
+    font-size: 3rem;
+}
+
+/*p{
+
+    font-size: 1;
+    color: black solid;
+    background-color: rgb(253, 235, 194);
+
+}*/
+
+.subtitulos{
+
+    background-color: bisque;
+
+}
+
+/*menu*/
+
+.h1DeMenu{
+
+    display: flex;
+    align-items: top;
+    justify-content: top;
+    background-color: black;    
+    
+
+}
+
+.fika{
+
+    width: 100%;
+    height: 300px;
+
+}
+
+.pizarra{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: black;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+
+}
+
+h3{
+
+    color: white;
+}
+
+
+.opcionesMenu{
+
+    color: white;
+    width: -7000px;
+    text-decoration: none;
+    margin-left: -55px;
+    
+}
+
+
+
+
+hr{
+    border-width:4px;
+    border-style:dotted;
+    border-color:burlywood;
+    width: 95%;
+}
+
+
+.card{
+
+    display: block;
+}
+
+#carouselExampleFade{
+
+    width: 70%;
+    height: 450x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-self: center;
+    padding-bottom: 70px;
+}
+
+
+.divImagen{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+}
+
+.tarjetas{
+    
+    display: block;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+
+}
+
+.imagenDeSN{
+
+    width: 100%;
+
+}
+
+.imgDeSN{
+
+    padding: 20px;
+
+}
+
+#body{
+
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+
+#bodyContacto{
+
+    margin: 5px;
+}
+
+.cards{
+
+    margin: 50px;
+    
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.bodyDelMenu{
+
+
+}
+
+#carouselExampleFade{
+
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.loguito{
+
+    height: 85px;
+    width: 160px;
+    background-color: white;
+    
+}
+
+.navbar-text{
+
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#borderDemo{
+    border: 9px inset #B0A778;
+    border-radius: 0px 0px 0px 30px;
+    }
+
+
+    @keyframes rotate-scale-down-diag-1 {
+        0% {
+        -webkit-transform: scale(1) rotate3d(1, 1, 0, 0deg);
+        transform: scale(1) rotate3d(1, 1, 0, 0deg);
+        }
+        50% {
+        -webkit-transform: scale(0.5) rotate3d(1, 1, 0, -180deg);
+        transform: scale(0.5) rotate3d(1, 1, 0, -180deg);
+        }
+        100% {
+        -webkit-transform: scale(1) rotate3d(1, 1, 0, -360deg);
+        transform: scale(1) rotate3d(1, 1, 0, -360deg);
+        }
+}
+
+.tarjetas{
+
+    -webkit-animation: rotate-scale-down-diag-1 0.7s linear both;
+	animation: rotate-scale-down-diag-1 0.7s linear both;
+}
+
+
+
+@media (min-width: 768px) {
+
+#body_index{
+
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+
+}
+
+
+#carouselExampleFade{
+
+    width: 70%;
+    height: 350x;
+    display: flex;
+    justify-content: center;
+    margin-left: 287px;
+    padding-bottom: 100px;
+}
+
+.card{
+
+    display: inline-block;
+    margin: 10px;
+}
+
+
+.imagen{
+
+    display: flex;
+}
+
+.navegacion{
+
+
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+h1{
+    font-size: 3.6rem;
+    color: antiquewhite;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 8px black;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+
+.navegacion{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: sticky;
+    top: 20px;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+
+.imagen{
+    width: 100%;
+    height: 500px;
+
+}
+
+
+
+li{
+
+            display: inline-block;
+            margin-left: 20px;
+            top: 10px;
+            list-style: none;
+}   
+
+
+
+
+section{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+}
+
+
+.fika{
+
+    height: 500px;
+}
+
+.imagenDeSN{
+
+    width: 60%;
+}
+
+
+/*
+.bodyMenu{
+
+    display: grid;
+    grid-template-columns:;
+    position: absolute;
+}
+
+
+
+*/
+
+}
+
+
+@media (hover: hover) {
+
+    .indra:hover {
+
+        color: purple;
+    }
+}
